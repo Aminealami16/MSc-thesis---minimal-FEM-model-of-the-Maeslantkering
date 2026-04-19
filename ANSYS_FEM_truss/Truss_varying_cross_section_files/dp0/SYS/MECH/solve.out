@@ -1,0 +1,1455 @@
+
+ Ansys Mechanical Enterprise Academic Research     
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2025 R2          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2025 Ansys, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2025 R2 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2025 R2 
+ Discovery (reduced install) 2025 R2 
+ Core WB Files 2025 R2   
+ Additive 2025 R2
+ optiSLang 2025 R2   
+ optiSLang AI 2025 R2
+ optiSLang App Generation 2025 R2
+ ModelCenter 2025 R2 
+ ModelCenter Remote Execution 2025 R2
+ ModelCenter MBSE 2025 R2
+ Granta EduPack 2025 R2  
+ Granta Selector 2025 R2 
+ Aqwa 2025 R2
+ Autodyn 2025 R2 
+ Customization Files for User Programmable Features 2025 R2  
+ ICEM CFD 2025 R2
+ LS-DYNA 2025 R2 
+ Material Calibration App 2025 R2
+ Material Designer 2025 R2   
+ Mechanical Products 2025 R2 
+ Motion 2025 R2  
+ Sherlock 2025 R2
+ ACIS Geometry Interface 2025 R2 
+ AutoCAD Geometry Interface 2025 R2  
+ Catia, Version 4 Geometry Interface 2025 R2 
+ Catia, Version 5 Geometry Interface 2025 R2 
+ Catia, Version 6 Geometry Interface 2025 R2 
+ Creo Elements/Direct Modeling Geometry Interface 2025 R2
+ Creo Parametric Geometry Interface 2025 R2  
+ Inventor Geometry Interface 2025 R2 
+ JTOpen Geometry Interface 2025 R2   
+ NX Geometry Interface 2025 R2   
+ Parasolid Geometry Interface  2025 R2   
+ Solid Edge Geometry Interface 2025 R2   
+ SOLIDWORKS Geometry Interface 2025 R2   
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       6 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     6 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2025 R2              BUILD= 25.2      UP20250519   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  19:32:59  APR 11, 2026 CP=      0.062
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.328   TIME= 19:32:59
+ The /CONFIG,NOELDB command is not valid in a distributed memory         
+ parallel solution.  Command is ignored.                                 
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  19.5497222    
+
+ TITLE= 
+ Truss_varying_cross_section--Modal (A5)                                       
+
+  ACT Extensions:
+      LSDYNA, 2025.2
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+ /COM,     ANSYSMotion, 2025.2
+      20180725-3f81-49eb-9f31-41364844c769, wbex
+  
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\Truss_varying_cross_section_files\dp0\SYS\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\Truss_varying_cross_section_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00429955  VERSION=WINDOWS x64   19:32:59  APR 11, 2026 CP=      0.344
+
+ Truss_varying_cross_section--Modal (A5)                                       
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 'Line Body' ***********
+ *********** Elements for Body 2 'Line Body' ***********
+ *********** Elements for Body 3 'Line Body' ***********
+ *********** Elements for Body 4 'Line Body' ***********
+ *********** Elements for Body 5 'Line Body' ***********
+ *********** Elements for Body 6 'Line Body' ***********
+ *********** Elements for Body 7 'Line Body' ***********
+ *********** Elements for Body 8 'Line Body' ***********
+ *********** Elements for Body 9 'Line Body' ***********
+ *********** Elements for Body 10 'Line Body' ***********
+ *********** Elements for Body 11 'Line Body' ***********
+ *********** Elements for Body 12 'Line Body' ***********
+ *********** Elements for Body 13 'Line Body' ***********
+ *********** Elements for Body 14 'Line Body' ***********
+ *********** Elements for Body 15 'Line Body' ***********
+ *********** Elements for Body 16 'Line Body' ***********
+ *********** Elements for Body 17 'Line Body' ***********
+ *********** Elements for Body 18 'Line Body' ***********
+ *********** Elements for Body 19 'Line Body' ***********
+ *********** Elements for Body 20 'Line Body' ***********
+ *********** Elements for Body 21 'Line Body' ***********
+ *********** Elements for Body 22 'Line Body' ***********
+ *********** Elements for Body 23 'Line Body' ***********
+ *********** Elements for Body 24 'Line Body' ***********
+ *********** Elements for Body 25 'Line Body' ***********
+ *********** Elements for Body 26 'Line Body' ***********
+ *********** Elements for Body 27 'Line Body' ***********
+ *********** Elements for Body 28 'Line Body' ***********
+ *********** Elements for Body 29 'Line Body' ***********
+ *********** Elements for Body 30 'Line Body' ***********
+ *********** Elements for Body 31 'Line Body' ***********
+ *********** Elements for Body 32 'Line Body' ***********
+ *********** Elements for Body 33 'Line Body' ***********
+ *********** Elements for Body 34 'Line Body' ***********
+ *********** Elements for Body 35 'Line Body' ***********
+ *********** Elements for Body 36 'Line Body' ***********
+ *********** Elements for Body 37 'Line Body' ***********
+ *********** Elements for Body 38 'Line Body' ***********
+ *********** Elements for Body 39 'Line Body' ***********
+ *********** Elements for Body 40 'Line Body' ***********
+ *********** Elements for Body 41 'Line Body' ***********
+ *********** Elements for Body 42 'Line Body' ***********
+ *********** Elements for Body 43 'Line Body' ***********
+ *********** Elements for Body 44 'Line Body' ***********
+ *********** Elements for Body 45 'Line Body' ***********
+ *********** Elements for Body 46 'Line Body' ***********
+ *********** Elements for Body 47 'Line Body' ***********
+ *********** Elements for Body 48 'Line Body' ***********
+ *********** Elements for Body 49 'Line Body' ***********
+ *********** Elements for Body 50 'Line Body' ***********
+ *********** Elements for Body 51 'Line Body' ***********
+ *********** Elements for Body 52 'Line Body' ***********
+ *********** Elements for Body 53 'Line Body' ***********
+ *********** Elements for Body 54 'Line Body' ***********
+ *********** Elements for Body 55 'Line Body' ***********
+ *********** Elements for Body 56 'Line Body' ***********
+ *********** Elements for Body 57 'Line Body' ***********
+ *********** Elements for Body 58 'Line Body' ***********
+ *********** Elements for Body 59 'Line Body' ***********
+ *********** Elements for Body 60 'Line Body' ***********
+ *********** Elements for Body 61 'Line Body' ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Send Beam Properties ***********
+ ******* Constant Zero Displacement X *******
+ ******* Constant Zero Displacement Y *******
+ ******* Constant Zero Displacement Z *******
+
+
+ ***** ROUTINE COMPLETED *****  CP =         1.500
+
+
+ --- Number of total nodes = 2148
+ --- Number of contact elements = 0
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 1109
+ --- Number of condensed parts = 0
+ --- Number of total elements = 1109
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  19.5500000    
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A MODAL ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ PARAMETER _THICKRATIO =     0.000000000    
+
+ THERMAL STRAINS ARE NOT INCLUDED IN THE LOAD VECTOR.
+
+
+ USE SYM. BLOCK LANCZOS MODE EXTRACTION METHOD
+  EXTRACT    10 MODES
+  NORMALIZE THE MODE SHAPES TO THE MASS MATRIX
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NLOA ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ PRINTOUT RESUMED BY /GOP
+
+ WRITE MISC ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR THE ENTITIES DEFINED BY COMPONENT _ELMISC 
+
+
+ EXPAND ALL EXTRACTED MODES
+  CALCULATE ELEMENT RESULTS AND NODAL DOF SOLUTION
+  CALCULATE STRESSES IN ANY DOWNSTREAM MODE SUPERPOSITION EXPANSION PASS
+
+ DO NOT COMBINE ELEMENT SAVE DATA FILES (.esav) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ELEMENT MATRIX FILES (.emat) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ASSEMBLED MATRIX FILES (.full) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_  ( =   0.00000     )  NE  
+      0  ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            CP =       1.625   TIME= 19:33:00
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 6 processes per solution.                     
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       1.719   TIME= 19:33:00
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       1.719   TIME= 19:33:00
+ The model data was checked and warning messages were found.             
+  Please review output or errors file ( C:\Users\alami\Documents\Msc     
+ Civil Engineering\Year 2\Master                                         
+ Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss 
+ s\_ProjectScratch\Scr147B\file0.err ) for these warning messages.       
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         1 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         2 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         2 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         3 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         3 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         4 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         4 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         5 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         5 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         6 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         6 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         7 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         7 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         8 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         8 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         9 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         9 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        10 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        10 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        11 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        11 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        12 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        12 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        13 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        13 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        14 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        14 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        15 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        15 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        16 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        16 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        17 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        17 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        18 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        18 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        19 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        19 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        20 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        20 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        21 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        21 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        22 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        22 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        23 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        23 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        24 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        24 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        25 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        25 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        26 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        26 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        27 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        27 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        28 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        28 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        29 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        29 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        30 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        30 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        31 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        31 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        32 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        32 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        33 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        33 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        34 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        34 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        35 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        35 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        36 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        36 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        37 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        37 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        38 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        38 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        39 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        39 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        40 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        40 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        41 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        41 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        42 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        42 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        43 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        43 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        44 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        44 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        45 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        45 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        46 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        46 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        47 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        47 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        48 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        48 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        49 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        49 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        50 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        50 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        51 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        51 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        52 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        52 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        53 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        53 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        54 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        54 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        55 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        55 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        56 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        56 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        57 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        57 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        58 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        58 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        59 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        59 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        60 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        60 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        61 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        61 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00429955  VERSION=WINDOWS x64   19:33:00  APR 11, 2026 CP=      1.812
+
+ Truss_varying_cross_section--Modal (A5)                                       
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .MODAL                
+      EXTRACTION METHOD. . . . . . . . . . . . . .BLOCK LANCZOS
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   THERMAL EXPANSION . . . . . . . . . . . . . . .OFF
+   NUMBER OF MODES TO EXTRACT. . . . . . . . . . .    10
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+   NUMBER OF MODES TO EXPAND . . . . . . . . . . .ALL
+   ELEMENT RESULTS CALCULATION . . . . . . . . . .ON 
+
+ *** NOTE ***                            CP =       1.812   TIME= 19:33:00
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+ *** NOTE ***                            CP =       1.891   TIME= 19:33:00
+ Internal nodes from 2149 to 3257 are created.                           
+ 1109 internal nodes are used for quadratic and/or cubic options of      
+ BEAM188, PIPE288, and/or SHELL208.                                      
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 1109
+  ...Number of nodes:    3257
+  ...Decompose to 6 CPU domains
+  ...Element load balance ratio =     1.005
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   THERMAL STRAINS INCLUDED IN THE LOAD VECTOR . .    NO
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      NLOA        ALL               
+      MISC        ALL       _ELMISC 
+
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+        0.51395E+07    0.0000        0.0000     |     0.0000       0.58958E+09  -0.26497E+08
+         0.0000       0.51395E+07    0.0000     |   -0.58958E+09    0.0000       0.31545E+08
+         0.0000        0.0000       0.51395E+07 |    0.26497E+08  -0.31545E+08    0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |    0.93560E+11  -0.17374E+09  -0.41340E+10
+                                                |   -0.17374E+09   0.93499E+11  -0.29734E+10
+                                                |   -0.41340E+10  -0.29734E+10   0.79191E+09
+
+   TOTAL MASS = 0.51395E+07
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=    6.1377        5.1555        114.72    
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+        0.25789E+11  -0.11111E+08  -0.51530E+09
+       -0.11111E+08   0.25671E+11   0.66203E+08
+       -0.51530E+09   0.66203E+08   0.46170E+09
+
+   PRINCIPAL INERTIAS =   0.25801E+11   0.25670E+11   0.45105E+09
+   ORIENTATION VECTORS OF THE INERTIA PRINCIPAL AXES IN GLOBAL CARTESIAN
+     ( 0.995,-0.095,-0.020) ( 0.096, 0.995, 0.001) ( 0.020,-0.003, 1.000) 
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1   151782.    
+     2   151782.    
+     3   125530.    
+     4   523403.    
+     5   113244.    
+     6   121782.    
+     7   70181.3    
+     8   96092.7    
+     9   155690.    
+    10   155690.    
+    11   137090.    
+    12   608911.    
+    13   130296.    
+    14   137090.    
+    15   87480.2    
+    16   113244.    
+    17   15613.4    
+    18   5269.51    
+    19   15613.4    
+    20   52636.0    
+    21   19467.4    
+    22   5269.51    
+    23   15613.4    
+    24   5269.51    
+    25   15613.4    
+    26   5269.51    
+    27   15613.4    
+    28   5269.51    
+    29   15613.4    
+    30   5269.51    
+    31   15613.4    
+    32   5269.51    
+    33   15613.4    
+    34   5269.51    
+    35   13965.0    
+    36   11606.5    
+    37   12875.1    
+    38   3122.67    
+    39   177416.    
+    40   87480.2    
+    41   104681.    
+    42   566659.    
+    43   194157.    
+    44   147200.    
+    45   14724.6    
+    46   16298.1    
+    47   190501.    
+    48   17064.8    
+    49   39567.3    
+    50   28697.6    
+    51   20111.5    
+    52   14979.8    
+    53   12883.6    
+    54   13439.3    
+    55   16298.1    
+    56   164524.    
+    57   17064.8    
+    58   39567.3    
+    59   28697.6    
+    60   20111.5    
+    61   47362.7    
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 8.919707728E+11 at element 585.                               
+ Minimum = 2.545873793E+10 at element 305.                               
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1        11  BEAM188       0.000   0.000000
+        2        11  BEAM188       0.078   0.007102
+        3        11  BEAM188       0.000   0.000000
+        4        50  BEAM188       0.000   0.000000
+        5        10  BEAM188       0.000   0.000000
+        6        10  BEAM188       0.000   0.000000
+        7        10  BEAM188       0.000   0.000000
+        8        10  BEAM188       0.000   0.000000
+        9        10  BEAM188       0.000   0.000000
+       10        10  BEAM188       0.000   0.000000
+       11        10  BEAM188       0.000   0.000000
+       12        50  BEAM188       0.000   0.000000
+       13        10  BEAM188       0.000   0.000000
+       14        10  BEAM188       0.000   0.000000
+       15        10  BEAM188       0.000   0.000000
+       16        10  BEAM188       0.000   0.000000
+       17        13  BEAM188       0.000   0.000000
+       18         8  BEAM188       0.000   0.000000
+       19        13  BEAM188       0.000   0.000000
+       20         8  BEAM188       0.000   0.000000
+       21        13  BEAM188       0.000   0.000000
+       22         8  BEAM188       0.000   0.000000
+       23        13  BEAM188       0.000   0.000000
+       24         8  BEAM188       0.000   0.000000
+       25        13  BEAM188       0.000   0.000000
+       26         8  BEAM188       0.000   0.000000
+       27        13  BEAM188       0.000   0.000000
+       28         8  BEAM188       0.000   0.000000
+       29        13  BEAM188       0.000   0.000000
+       30         8  BEAM188       0.000   0.000000
+       31        13  BEAM188       0.000   0.000000
+       32         8  BEAM188       0.000   0.000000
+       33        13  BEAM188       0.000   0.000000
+       34         8  BEAM188       0.000   0.000000
+       35        12  BEAM188       0.000   0.000000
+       36         5  BEAM188       0.000   0.000000
+       37        11  BEAM188       0.000   0.000000
+       38         3  BEAM188       0.000   0.000000
+       39        28  BEAM188       0.000   0.000000
+       40        10  BEAM188       0.000   0.000000
+       41        10  BEAM188       0.000   0.000000
+       42        51  BEAM188       0.000   0.000000
+       43        22  BEAM188       0.000   0.000000
+       44        10  BEAM188       0.000   0.000000
+       45        10  BEAM188       0.000   0.000000
+       46        11  BEAM188       0.000   0.000000
+       47       154  BEAM188       0.000   0.000000
+       48        11  BEAM188       0.000   0.000000
+       49        32  BEAM188       0.000   0.000000
+       50        19  BEAM188       0.000   0.000000
+       51         9  BEAM188       0.000   0.000000
+       52        10  BEAM188       0.000   0.000000
+       53        11  BEAM188       0.000   0.000000
+       54        11  BEAM188       0.000   0.000000
+       55        11  BEAM188       0.000   0.000000
+       56       133  BEAM188       0.000   0.000000
+       57        11  BEAM188       0.000   0.000000
+       58        32  BEAM188       0.000   0.000000
+       59        19  BEAM188       0.000   0.000000
+       60         9  BEAM188       0.000   0.000000
+       61        22  BEAM188       0.000   0.000000
+ Time at end of element matrix formulation CP = 2.75.                    
+
+  BLOCK LANCZOS CALCULATION OF UP TO    10 EIGENVECTORS.
+  NUMBER OF EQUATIONS              =        12828
+  MAXIMUM WAVEFRONT                =           59
+  MAXIMUM MODES STORED             =           10
+  MINIMUM EIGENVALUE               =  0.00000E+00
+  MAXIMUM EIGENVALUE               =  0.10000E+31
+
+
+
+  Memory allocated on only this MPI rank (rank     0)
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =     1.720 MB
+  Equation solver memory required for in-core mode     =     1.651 MB
+  Equation solver memory required for out-of-core mode =     1.651 MB
+  Total (solver and non-solver) memory allocated       =   406.204 MB
+
+
+  Total memory summed across all MPI ranks on this machines
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =    12.309 MB
+  Equation solver memory required for in-core mode     =    11.819 MB
+  Equation solver memory required for out-of-core mode =    10.825 MB
+  Total (solver and non-solver) memory allocated       =   996.977 MB
+
+ *** NOTE ***                            CP =       3.000   TIME= 19:33:00
+ The Distributed Sparse Matrix Solver used by the Block Lanczos          
+ eigensolver is currently running in the in-core memory mode.  This      
+ memory mode uses the most amount of memory in order to avoid using the  
+ hard drive as much as possible, which most often results in the         
+ fastest solution time.  This mode is recommended if enough physical     
+ memory is present to accommodate all of the solver data.                
+
+  Process memory required for in-core LANCZOS Workspace             =     9.088272 MB
+  Process memory required for out-of-core LANCZOS Workspace         =     704.078125 KB
+
+  Total   memory required for in-core LANCZOS Workspace             =     52.222504 MB
+  Total   memory required for out-of-core LANCZOS Workspace         =     4.070526 MB
+
+  Lanczos Memory Mode : INCORE
+
+
+  >> Shift # 1 :  | |                                : 10 Eigenvalues Converged
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00429955  VERSION=WINDOWS x64   19:33:01  APR 11, 2026 CP=      3.266
+
+ Truss_varying_cross_section--Modal (A5)                                       
+
+
+
+ *** FREQUENCIES FROM BLOCK LANCZOS ITERATION ***
+
+  MODE    FREQUENCY (HERTZ)      
+
+
+    1    0.9312032575411    
+    2     1.183434675949    
+    3     1.352501117898    
+    4     2.046696306720    
+    5     2.599703038634    
+    6     2.837984224223    
+    7     3.167528538853    
+    8     4.021419762880    
+    9     4.542625552553    
+   10     4.629034281822    
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1        11  BEAM188       0.000   0.000000
+        2        11  BEAM188       0.000   0.000000
+        3        11  BEAM188       0.000   0.000000
+        4        50  BEAM188       0.000   0.000000
+        5        10  BEAM188       0.000   0.000000
+        6        10  BEAM188       0.000   0.000000
+        7        10  BEAM188       0.000   0.000000
+        8        10  BEAM188       0.000   0.000000
+        9        10  BEAM188       0.000   0.000000
+       10        10  BEAM188       0.000   0.000000
+       11        10  BEAM188       0.000   0.000000
+       12        50  BEAM188       0.016   0.000313
+       13        10  BEAM188       0.000   0.000000
+       14        10  BEAM188       0.000   0.000000
+       15        10  BEAM188       0.000   0.000000
+       16        10  BEAM188       0.000   0.000000
+       17        13  BEAM188       0.000   0.000000
+       18         8  BEAM188       0.000   0.000000
+       19        13  BEAM188       0.000   0.000000
+       20         8  BEAM188       0.000   0.000000
+       21        13  BEAM188       0.000   0.000000
+       22         8  BEAM188       0.000   0.000000
+       23        13  BEAM188       0.000   0.000000
+       24         8  BEAM188       0.000   0.000000
+       25        13  BEAM188       0.000   0.000000
+       26         8  BEAM188       0.000   0.000000
+       27        13  BEAM188       0.000   0.000000
+       28         8  BEAM188       0.000   0.000000
+       29        13  BEAM188       0.000   0.000000
+       30         8  BEAM188       0.000   0.000000
+       31        13  BEAM188       0.016   0.001202
+       32         8  BEAM188       0.000   0.000000
+       33        13  BEAM188       0.000   0.000000
+       34         8  BEAM188       0.000   0.000000
+       35        12  BEAM188       0.000   0.000000
+       36         5  BEAM188       0.000   0.000000
+       37        11  BEAM188       0.000   0.000000
+       38         3  BEAM188       0.000   0.000000
+       39        28  BEAM188       0.000   0.000000
+       40        10  BEAM188       0.000   0.000000
+       41        10  BEAM188       0.000   0.000000
+       42        51  BEAM188       0.000   0.000000
+       43        22  BEAM188       0.000   0.000000
+       44        10  BEAM188       0.000   0.000000
+       45        10  BEAM188       0.000   0.000000
+       46        11  BEAM188       0.000   0.000000
+       47       154  BEAM188       0.016   0.000101
+       48        11  BEAM188       0.000   0.000000
+       49        32  BEAM188       0.000   0.000000
+       50        19  BEAM188       0.000   0.000000
+       51         9  BEAM188       0.000   0.000000
+       52        10  BEAM188       0.000   0.000000
+       53        11  BEAM188       0.000   0.000000
+       54        11  BEAM188       0.000   0.000000
+       55        11  BEAM188       0.000   0.000000
+       56       133  BEAM188       0.031   0.000235
+       57        11  BEAM188       0.000   0.000000
+       58        32  BEAM188       0.000   0.000000
+       59        19  BEAM188       0.000   0.000000
+       60         9  BEAM188       0.000   0.000000
+       61        22  BEAM188       0.000   0.000000
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1        11  BEAM188       0.000   0.000000
+        2        11  BEAM188       0.000   0.000000
+        3        11  BEAM188       0.000   0.000000
+        4        50  BEAM188       0.000   0.000000
+        5        10  BEAM188       0.000   0.000000
+        6        10  BEAM188       0.000   0.000000
+        7        10  BEAM188       0.000   0.000000
+        8        10  BEAM188       0.000   0.000000
+        9        10  BEAM188       0.000   0.000000
+       10        10  BEAM188       0.000   0.000000
+       11        10  BEAM188       0.000   0.000000
+       12        50  BEAM188       0.000   0.000000
+       13        10  BEAM188       0.000   0.000000
+       14        10  BEAM188       0.000   0.000000
+       15        10  BEAM188       0.000   0.000000
+       16        10  BEAM188       0.000   0.000000
+       17        13  BEAM188       0.000   0.000000
+       18         8  BEAM188       0.000   0.000000
+       19        13  BEAM188       0.000   0.000000
+       20         8  BEAM188       0.000   0.000000
+       21        13  BEAM188       0.000   0.000000
+       22         8  BEAM188       0.000   0.000000
+       23        13  BEAM188       0.000   0.000000
+       24         8  BEAM188       0.000   0.000000
+       25        13  BEAM188       0.000   0.000000
+       26         8  BEAM188       0.000   0.000000
+       27        13  BEAM188       0.000   0.000000
+       28         8  BEAM188       0.000   0.000000
+       29        13  BEAM188       0.000   0.000000
+       30         8  BEAM188       0.000   0.000000
+       31        13  BEAM188       0.000   0.000000
+       32         8  BEAM188       0.000   0.000000
+       33        13  BEAM188       0.000   0.000000
+       34         8  BEAM188       0.000   0.000000
+       35        12  BEAM188       0.000   0.000000
+       36         5  BEAM188       0.000   0.000000
+       37        11  BEAM188       0.000   0.000000
+       38         3  BEAM188       0.000   0.000000
+       39        28  BEAM188       0.000   0.000000
+       40        10  BEAM188       0.000   0.000000
+       41        10  BEAM188       0.000   0.000000
+       42        51  BEAM188       0.000   0.000000
+       43        22  BEAM188       0.000   0.000000
+       44        10  BEAM188       0.000   0.000000
+       45        10  BEAM188       0.000   0.000000
+       46        11  BEAM188       0.000   0.000000
+       47       154  BEAM188       0.000   0.000000
+       48        11  BEAM188       0.000   0.000000
+       49        32  BEAM188       0.000   0.000000
+       50        19  BEAM188       0.000   0.000000
+       51         9  BEAM188       0.000   0.000000
+       52        10  BEAM188       0.000   0.000000
+       53        11  BEAM188       0.000   0.000000
+       54        11  BEAM188       0.000   0.000000
+       55        11  BEAM188       0.000   0.000000
+       56       133  BEAM188       0.000   0.000000
+       57        11  BEAM188       0.000   0.000000
+       58        32  BEAM188       0.000   0.000000
+       59        19  BEAM188       0.000   0.000000
+       60         9  BEAM188       0.000   0.000000
+       61        22  BEAM188       0.000   0.000000
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00429955  VERSION=WINDOWS x64   19:33:01  APR 11, 2026 CP=      3.516
+
+ Truss_varying_cross_section--Modal (A5)                                       
+
+
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****  X  DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1    0.931203        1.0739        1925.8        1.000000    0.370885E+07    0.841366        0.721636    
+     2     1.18343       0.84500        381.13        0.197904     145260.        0.874318        0.282635E-01
+     3     1.35250       0.73937       -46.239        0.024010     2138.05        0.874803        0.416002E-03
+     4     2.04670       0.48859        44.593        0.023155     1988.58        0.875255        0.386920E-03
+     5     2.59970       0.38466        48.883        0.025383     2389.54        0.875797        0.464935E-03
+     6     2.83798       0.35236        70.639        0.036679     4989.80        0.876929        0.970872E-03
+     7     3.16753       0.31570        720.01        0.373869     518417.        0.994533        0.100869    
+     8     4.02142       0.24867        108.70        0.056443     11815.6        0.997214        0.229897E-02
+     9     4.54263       0.22014        33.062        0.017168     1093.09        0.997462        0.212683E-03
+    10     4.62903       0.21603        105.78        0.054928     11190.0         1.00000        0.217724E-02
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.440814E+07                    0.857696    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****  Y  DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1    0.931203        1.0739       -382.53        0.202391     146326.        0.345713E-01    0.284708E-01
+     2     1.18343       0.84500        1890.0        1.000000    0.357221E+07    0.878550        0.695049    
+     3     1.35250       0.73937       -2.4481        0.001295     5.99295        0.878552        0.116606E-05
+     4     2.04670       0.48859        74.974        0.039668     5621.12        0.879880        0.109371E-02
+     5     2.59970       0.38466       -83.592        0.044228     6987.64        0.881531        0.135959E-02
+     6     2.83798       0.35236        100.71        0.053286     10142.9        0.883927        0.197352E-02
+     7     3.16753       0.31570       -4.1462        0.002194     17.1911        0.883931        0.334489E-05
+     8     4.02142       0.24867       -72.956        0.038601     5322.62        0.885189        0.103563E-02
+     9     4.54263       0.22014        688.94        0.364514     474641.        0.997329        0.923514E-01
+    10     4.62903       0.21603        106.34        0.056261     11307.3         1.00000        0.220007E-02
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.423258E+07                    0.823539    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****  Z  DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1    0.931203        1.0739       -123.02        0.575021     15135.0        0.136226        0.294484E-02
+     2     1.18343       0.84500        56.446        0.263828     3186.10        0.164903        0.619922E-03
+     3     1.35250       0.73937       -20.921        0.097786     437.696        0.168842        0.851631E-04
+     4     2.04670       0.48859       -213.95        1.000000     45773.7        0.580838        0.890625E-02
+     5     2.59970       0.38466        30.507        0.142589     930.659        0.589214        0.181079E-03
+     6     2.83798       0.35236       -107.33        0.501643     11518.8        0.692891        0.224122E-02
+     7     3.16753       0.31570       -114.72        0.536198     13160.3        0.811343        0.256062E-02
+     8     4.02142       0.24867       -79.574        0.371934     6332.09        0.868336        0.123204E-02
+     9     4.54263       0.22014        109.91        0.513716     12079.9        0.977064        0.235040E-02
+    10     4.62903       0.21603        50.481        0.235948     2548.29         1.00000        0.495824E-03
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                             111103.                        0.216173E-01
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****ROTX DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1    0.931203        1.0739        49230.        0.204223    0.242355E+10    0.321376E-01    0.259037E-01
+     2     1.18343       0.84500      -0.24106E+06    1.000000    0.581088E+11    0.802693        0.621085    
+     3     1.35250       0.73937       -9192.7        0.038135    0.845049E+08    0.803813        0.903216E-03
+     4     2.04670       0.48859       -5521.8        0.022907    0.304903E+08    0.804217        0.325890E-03
+     5     2.59970       0.38466       -45304.        0.187940    0.205249E+10    0.831435        0.219377E-01
+     6     2.83798       0.35236        79589.        0.330166    0.633443E+10    0.915433        0.677044E-01
+     7     3.16753       0.31570       -10552.        0.043772    0.111337E+09    0.916909        0.119000E-02
+     8     4.02142       0.24867        14738.        0.061140    0.217214E+09    0.919789        0.232165E-02
+     9     4.54263       0.22014       -77089.        0.319795    0.594272E+10    0.998593        0.635177E-01
+    10     4.62903       0.21603       -10300.        0.042730    0.106096E+09     1.00000        0.113399E-02
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.754116E+11                    0.806024    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****ROTY DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1    0.931203        1.0739       0.21915E+06    1.000000    0.480248E+11    0.640360        0.513642    
+     2     1.18343       0.84500        47144.        0.215127    0.222257E+10    0.669996        0.237712E-01
+     3     1.35250       0.73937       -13548.        0.061823    0.183555E+09    0.672443        0.196319E-02
+     4     2.04670       0.48859      -0.11105E+06    0.506733    0.123318E+11    0.836874        0.131892    
+     5     2.59970       0.38466        1370.8        0.006255    0.187907E+07    0.836899        0.200972E-04
+     6     2.83798       0.35236        13733.        0.062667    0.188602E+09    0.839414        0.201716E-02
+     7     3.16753       0.31570        89458.        0.408211    0.800269E+10    0.946121        0.855914E-01
+     8     4.02142       0.24867        12536.        0.057205    0.157154E+09    0.948217        0.168082E-02
+     9     4.54263       0.22014       -6325.5        0.028865    0.400125E+08    0.948750        0.427947E-03
+    10     4.62903       0.21603        61996.        0.282901    0.384356E+10     1.00000        0.411082E-01
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.749966E+11                    0.802114    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****ROTZ DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1    0.931203        1.0739       -13213.        0.699035    0.174571E+09    0.244510        0.220442    
+     2     1.18343       0.84500        11464.        0.606513    0.131418E+09    0.428579        0.165950    
+     3     1.35250       0.73937       -18901.        1.000000    0.357252E+09    0.928959        0.451125    
+     4     2.04670       0.48859        1659.4        0.087796    0.275374E+07    0.932816        0.347731E-02
+     5     2.59970       0.38466       -511.42        0.027058     261551.        0.933183        0.330277E-03
+     6     2.83798       0.35236       -1380.1        0.073016    0.190464E+07    0.935850        0.240510E-02
+     7     3.16753       0.31570       -2150.8        0.113794    0.462608E+07    0.942330        0.584164E-02
+     8     4.02142       0.24867       -5955.6        0.315090    0.354687E+08    0.992008        0.447886E-01
+     9     4.54263       0.22014        2324.4        0.122975    0.540265E+07    0.999576        0.682227E-02
+    10     4.62903       0.21603       -550.50        0.029125     303054.         1.00000        0.382685E-03
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.713962E+09                    0.901565    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+ *** NOTE ***                            CP =       3.516   TIME= 19:33:01
+ The modes requested are mass normalized (Nrmkey on MODOPT).  However,   
+ the modal masses and kinetic energies below are calculated with unit    
+ normalized modes.                                                       
+
+        ***** MODAL MASSES, KINETIC ENERGIES, AND TRANSLATIONAL EFFECTIVE MASSES SUMMARY *****
+
+                                                                         EFFECTIVE MASS
+  MODE  FREQUENCY   MODAL MASS     KENE      |      X-DIR      RATIO%   Y-DIR      RATIO%   Z-DIR      RATIO% 
+     1  0.9312      0.2308E+07  0.3950E+08   |    0.3709E+07   72.16  0.1463E+06    2.85  0.1514E+05    0.29
+     2   1.183      0.2292E+07  0.6337E+08   |    0.1453E+06    2.83  0.3572E+07   69.50   3186.        0.06
+     3   1.353      0.1635E+07  0.5905E+08   |     2138.        0.04   5.993        0.00   437.7        0.01
+     4   2.047      0.2089E+07  0.1727E+09   |     1989.        0.04   5621.        0.11  0.4577E+05    0.89
+     5   2.600      0.1489E+07  0.1986E+09   |     2390.        0.05   6988.        0.14   930.7        0.02
+     6   2.838      0.1568E+07  0.2493E+09   |     4990.        0.10  0.1014E+05    0.20  0.1152E+05    0.22
+     7   3.168      0.2012E+07  0.3984E+09   |    0.5184E+06   10.09   17.19        0.00  0.1316E+05    0.26
+     8   4.021      0.9736E+06  0.3108E+09   |    0.1182E+05    0.23   5323.        0.10   6332.        0.12
+     9   4.543      0.1796E+07  0.7315E+09   |     1093.        0.02  0.4746E+06    9.24  0.1208E+05    0.24
+    10   4.629      0.1674E+07  0.7079E+09   |    0.1119E+05    0.22  0.1131E+05    0.22   2548.        0.05
+ --------------------------------------------------------------------------------------------------------------
+   sum                                       |    0.4408E+07   85.77  0.4233E+07   82.35  0.1111E+06    2.16
+ --------------------------------------------------------------------------------------------------------------
+
+
+ *** MAPDL BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        0.625 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        0.188 MB WRITTEN ON MODAL MATRIX FILE: file0.mode
+        3.062 MB WRITTEN ON RESULTS FILE: file0.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+
+ *GET  _NMODALSOLPROC  FROM  ACTI  ITEM=NUMC       VALUE=  6.00000000    
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         3.625
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  19.5502778    
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00429955  VERSION=WINDOWS x64   19:33:01  APR 11, 2026 CP=      3.641
+
+ Truss_varying_cross_section--Modal (A5)                                       
+
+
+
+          ***** MAPDL RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =       3.641   TIME= 19:33:01
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ PRINTOUT RESUMED BY /GOP
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE MAPDL POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =         3.734
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  19.5502778    
+
+ PARAMETER _PREPTIME =     1.000000000    
+
+ PARAMETER _SOLVTIME =     1.000000000    
+
+ PARAMETER _POSTTIME =     0.000000000    
+
+ PARAMETER _TOTALTIM =     2.000000000    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.00543478    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.720578000E-01
+
+ *GET  _SSMODE   FROM  ACTI  ITEM=SOLU SSMM  VALUE=  2.00000000    
+
+ *GET  _NDOFS    FROM  ACTI  ITEM=SOLU NDOF  VALUE=  12828.0000    
+
+ /FCLEAN COMMAND REMOVING ALL LOCAL FILES
+ --- Total number of nodes = 2148
+ --- Total number of elements = 1109
+ --- Element load balance ratio = 1.00543478
+ --- Time to combine distributed files = 7.20578E-02
+ --- Sparse memory mode = 2
+ --- Number of DOF = 12828
+
+ EXIT MAPDL WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          1
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2025 R2            Build: 25.2       Update: UP20250519   Platform: WINDOWS x64 
+Date Run: 04/11/2026   Time: 19:33     Process ID: 20340
+Operating System: Windows 11  (Build: 26200)
+
+Processor Model: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) oneAPI Math Kernel Library Version 2024.2.3-Product Build 20250403
+
+Number of machines requested            :    1
+Total number of cores available         :   12
+Number of physical cores available      :    6
+Number of processes requested           :    6
+Number of threads per process requested :    1
+Total number of cores requested         :    6 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.14 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0                LAPTOP-AMINE   C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B
+     1                LAPTOP-AMINE   C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B
+     2                LAPTOP-AMINE   C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B
+     3                LAPTOP-AMINE   C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B
+     4                LAPTOP-AMINE   C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B
+     5                LAPTOP-AMINE   C:\Users\alami\Documents\Msc Civil Engineering\Year 2\Master Thesis\MSc-thesis---Minimal-model-of-the-Maeslantkering\ANSYS_FEM_truss\_ProjectScratch\Scr147B
+ 
+Latency time from master to core     1 =    4.302 microseconds
+Latency time from master to core     2 =    3.677 microseconds
+Latency time from master to core     3 =    3.711 microseconds
+Latency time from master to core     4 =    3.859 microseconds
+Latency time from master to core     5 =    3.720 microseconds
+ 
+Communication speed from master to core     1 =  4435.06 MB/sec
+Communication speed from master to core     2 =  5251.62 MB/sec
+Communication speed from master to core     3 =  4065.68 MB/sec
+Communication speed from master to core     4 =  6652.25 MB/sec
+Communication speed from master to core     5 =  6782.36 MB/sec
+
+Total CPU time for main thread                    :        1.8 seconds
+Total CPU time summed for all threads             :        4.7 seconds
+
+Elapsed time spent obtaining a license            :        0.7 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.2 seconds
+Elapsed time spent solution - preprocessing       :        0.1 seconds
+Elapsed time spent computing solution             :        1.1 seconds
+Elapsed time spent solution - postprocessing      :        0.1 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Eigensolver used                                  :            Block Lanczos
+Equation solver computational rate                :        0.1 Gflops
+
+Sum of disk space used on all processes           :       36.2 MB
+
+Sum of memory used on all processes               :      285.0 MB
+Sum of memory allocated on all processes          :     3264.0 MB
+Physical memory available                         :         16 GB
+Total amount of I/O written to disk               :        0.0 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2025 R2         Build 25.2         UP20250519    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)      3 MB     Max Scratch Used(Master)     47 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)    46 MB |
+ |  Sum Database Used(All)         8 MB     Sum Scratch Used(All)       277 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          4.734       Time  =  19:33:11          |
+ |        Elapsed Time (sec) =         18.000       Date  =  04/11/2026        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*
