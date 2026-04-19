@@ -33,25 +33,6 @@ def effective_truss_stiffness(d1, d2,t1, t2, h, b):
     b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
     h_eq = Iz_eq / ((1/12)* b_eq**3)
 
-
-    # Iy_eq = (I + A2 * z_NC**2 + 2 * (I + A2 * (h - z_NC)**2)) #* 0.065
-    # Iz_eq = Iy_eq*0.9
-
-    # Iy_eq = 20
-    # Iz_eq = 0.9*Iy_eq
-
-    # h_eq = h
-    # b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
-    # A_eq = b_eq * h_eq
-
-
-    # Iy_eq = 116*2.6
-    # Iz_eq = 0.85*Iy_eq
-    # b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
-    # h_eq = Iz_eq / ((1/12)* b_eq**3)
-    # A_eq = A1 * 5 + A2 * 3
-    # # A_eq = b_eq * h_eq
-
     Iy_eq = 390
     Iz_eq = 0.45*Iy_eq
     b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
@@ -128,7 +109,7 @@ def stiffness_fenders():
 
     # K_spring_linear = 4 * (250 * 1000) / (90 / 1000) # retrieved from report Handboek 2: Kerende wand en vakwerkarmen
     K_spring_linear = ((1200+1750) / 2) * 10**6  # Retrieved from HVR engineering report
-    K_spring_linear = 10000 * 1000
+    K_spring_linear = 50000 * 1000
     return K_spring_linear
    
 
