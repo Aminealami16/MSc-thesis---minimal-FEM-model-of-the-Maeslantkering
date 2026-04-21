@@ -33,12 +33,12 @@ def effective_truss_stiffness(d1, d2,t1, t2, h, b):
     b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
     h_eq = Iz_eq / ((1/12)* b_eq**3)
 
-    Iy_eq = 390
+    Iy_eq = 390 #390
     Iz_eq = 0.45*Iy_eq
     b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
     h_eq = Iz_eq / ((1/12)* b_eq**3)
     A_eq = A1 * 5 + A2 * 3
-
+    
 
 
 
@@ -153,4 +153,37 @@ def stiffness_connecting_beams():
     
 
     return Iy, Iz, Ip, It, A
+
+def stiffness_braces():
+    d_out = 0.5
+    d_in = 0.5 - (10 / 1000)
+    h = 18
+    A = 2 * np.pi * (d_out/2)**2 - np.pi * (d_in/2)**2
+    Iy = 2 * ( (np.pi / 4) * ((d_out/2)**4 - (d_in/2)**4) + A * (h/2)**2) 
+    Iz = 2 * ( (np.pi / 4) * ((d_out/2)**4 - (d_in/2)**4) ) + A
+    Ip = Iy + Iz
+    It = Ip
+    return Iy, Iz, Ip, It, A
+
+def stiffness_connecting_truss(d1, d2,t1, t2, h, b):
+
+    A1 = np.pi * (d1/2)**2 - np.pi * ((d1/2) - 2 * t1)**2
+    A2 = np.pi * (d2/2)**2 - np.pi * ((d2/2) - 2 * t2)**2
+
+    z_NC = (A2 * 0 +  2 * h * A2) / (3 * A2)
+    y_NC = (A2 * 0 + A2 * 0.5 * b + A2 * b) / (3 * A2)
+    I = (np.pi / 4) * ((d2/2)**4 - ((d2/2) - t2)**4)
+    Iy_eq = I + A2 * z_NC**2 + 2 * (I + A2 * (h - z_NC)**2)
+    Iz_eq = I + A2 * y_NC**2 + I + A2 * (0.5 * b - y_NC)**2 + I + A2 * (b - y_NC)**2
+    A_eq = A1 * 5 + A2 * 3
+    b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
+    h_eq = Iz_eq / ((1/12)* b_eq**3)
+
+    Ieqy = 300
+    Ieqz = 0.3 * Ieqy
+    b_eq  = ((Iz_eq**3) / (Iy_eq* (1/12)**2))**(1/8)
+    h_eq = Iz_eq / ((1/12)* b_eq**3)
+    A_eq = A1 * 5 + A2 * 3
+
+    return A_eq, Iy_eq, Iz_eq, b_eq, h_eq
 

@@ -38,7 +38,7 @@ def plot_nodes(nodes):
         ax.set_xlabel('X axis')
         ax.set_ylabel('Y axis')
         ax.set_zlabel('Z axis')
-        ax.set_zlim(0, 20)
+        # ax.set_zlim(0, 20)
     plt.show()
 
 

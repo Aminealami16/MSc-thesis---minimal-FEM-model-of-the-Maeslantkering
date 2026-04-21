@@ -103,6 +103,26 @@ def elements(n1, n2, ep_K, ep_M):
 
     return n1, n2, M_e, K_e
 
+def elements_wet(n1, n2, ep_K, ep_M, angle):
+    """
+    Create an element connecting two nodes.
+
+    Parameters:
+    n1 (np.ndarray): Coordinates of the first node.
+    n2 (np.ndarray): Coordinates of the second node.
+
+    Returns:
+    tuple: A tuple containing the coordinates of the two nodes.
+    """
+    ex = [n1[0], n2[0]]
+    ey = [n1[1], n2[1]]
+    ez = [n1[2], n2[2]]
+    eo = [0, -np.sin(np.radians(angle)), np.cos(np.radians(angle))]
+
+    M_e, K_e = tm.T_element(ex, ey, ez, eo, ep_K, ep_M)
+
+    return n1, n2, M_e, K_e
+
 
 def elements_added_mass(n1, n2, ep_K, ep_M):
     """
