@@ -109,7 +109,7 @@ def stiffness_fenders():
 
     # K_spring_linear = 4 * (250 * 1000) / (90 / 1000) # retrieved from report Handboek 2: Kerende wand en vakwerkarmen
     K_spring_linear = ((1200+1750) / 2) * 10**6  # Retrieved from HVR engineering report
-    K_spring_linear = 50000 * 1000
+    K_spring_linear = 10000 * 1000
     return K_spring_linear
    
 
